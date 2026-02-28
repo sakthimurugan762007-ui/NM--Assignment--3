@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CODAX ZENITH 2K26 – Symposium Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ░░ HEADER ░░ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-badge">National Technical Symposium</div>
+      <h1 class="header-title">CODAX ZENITH <span class="accent">2K26</span></h1>
+      <p class="header-sub">Register &amp; Showcase Your Talent — 15 March 2026</p>
+    </div>
+    <div class="header-decor" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+
+    <!-- ░░ EVENT INFO ░░ -->
+    <section class="section event-info-section">
+      <h2 class="section-title">Event Information</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="info-icon">📅</span>
+          <span class="info-label">Date</span>
+          <span class="info-value">15 March 2026</span>
+        </div>
+        <div class="info-card">
+          <span class="info-icon">🕘</span>
+          <span class="info-label">Time</span>
+          <span class="info-value">9:00 AM – 4:30 PM</span>
+        </div>
+        <div class="info-card">
+          <span class="info-icon">📍</span>
+          <span class="info-label">Venue</span>
+          <span class="info-value">Main Auditorium</span>
+        </div>
+        <div class="info-card">
+          <span class="info-icon">🏛️</span>
+          <span class="info-label">Organizer</span>
+          <span class="info-value">Dept. of Computer Application</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ REGISTRATION FORM ░░ -->
+    <section class="section form-section">
+      <h2 class="section-title">Registration Form</h2>
+
+      <form id="regForm" novalidate>
+
+        <!-- Personal Info -->
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">👤 Personal Information</legend>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="name" class="field-label">Full Name <span class="req">*</span></label>
+              <input type="text" id="name" class="field-input" placeholder="e.g. XXXXXXXXXX" required>
+            </div>
+            <div class="field-group">
+              <label for="email" class="field-label">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" class="field-input" placeholder="e.g. abc@gmail.com" required>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group">
+              <label for="phone" class="field-label">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="phone" class="field-input" placeholder="10-digit mobile number" required>
+            </div>
+            <div class="field-group">
+              <label for="dob" class="field-label">Date of Birth <span class="req">*</span></label>
+              <input type="date" id="dob" class="field-input" required>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group radio-group">
+              <label class="field-label">Gender <span class="req">*</span></label>
+              <div class="radio-options">
+                <label class="radio-label"><input type="radio" name="gender" value="Male" required> Male</label>
+                <label class="radio-label"><input type="radio" name="gender" value="Female"> Female</label>
+                <label class="radio-label"><input type="radio" name="gender" value="Other"> Other</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- College Details -->
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">🎓 College Details</legend>
+
+          <div class="field-row">
+            <div class="field-group full-width">
+              <label for="college" class="field-label">College / University Name <span class="req">*</span></label>
+              <input type="text" id="college" class="field-input" placeholder="e.g. XYZ Arts College" required>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field-group radio-group">
+              <label class="field-label">Department <span class="req">*</span></label>
+              <div class="radio-options wrap">
+                <label class="radio-label"><input type="radio" name="dept" value="BCA" required> BCA</label>
+                <label class="radio-label"><input type="radio" name="dept" value="B.Sc.CS"> B.Sc.CS</label>
+                <label class="radio-label"><input type="radio" name="dept" value="B.Sc.IT"> B.Sc.IT</label>
+                <label class="radio-label"><input type="radio" name="dept" value="B.Sc.AI"> B.Sc.AI</label>
+                <label class="radio-label"><input type="radio" name="dept" value="B.Sc.DS"> B.Sc.DS</label>
+                <label class="radio-label"><input type="radio" name="dept" value="Others" id="deptOthersRadio"> Others</label>
+              </div>
+              <input type="text" id="otherDept" class="field-input mt-8" placeholder="Type your department" style="display:none;">
+            </div>
+
+            <div class="field-group radio-group">
+              <label class="field-label">Year of Study <span class="req">*</span></label>
+              <div class="radio-options">
+                <label class="radio-label"><input type="radio" name="year" value="1" required> 1st</label>
+                <label class="radio-label"><input type="radio" name="year" value="2"> 2nd</label>
+                <label class="radio-label"><input type="radio" name="year" value="3"> 3rd</label>
+                <label class="radio-label"><input type="radio" name="year" value="4"> 4th</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Event Selection -->
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">🏆 Event Selection</legend>
+          <p class="fieldset-hint">Select one or more events you wish to participate in.</p>
+          <div class="checkbox-grid">
+            <label class="check-label"><input type="checkbox" class="event" value="Paper Presentation"> <span>📄 Paper Presentation</span></label>
+            <label class="check-label"><input type="checkbox" class="event" value="Project Expo"> <span>🔬 Project Expo</span></label>
+            <label class="check-label"><input type="checkbox" class="event" value="Technical Quiz"> <span>🧠 Technical Quiz</span></label>
+            <label class="check-label"><input type="checkbox" class="event" value="Coding Contest"> <span>💻 Coding Contest</span></label>
+            <label class="check-label"><input type="checkbox" class="event" value="Hackathon"> <span>⚡ Hackathon</span></label>
+            <label class="check-label"><input type="checkbox" class="event" value="Debugging"> <span>🐛 Debugging</span></label>
+            <label class="check-label"><input type="checkbox" class="event" value="Logo Designing"> <span>🎨 Logo Designing</span></label>
+            <label class="check-label"><input type="checkbox" class="event" value="Tech Debate"> <span>🎤 Tech Debate</span></label>
+            <label class="check-label"><input type="checkbox" class="event" value="Prompt Engineering"> <span>🤖 Prompt Engineering</span></label>
+          </div>
+          <!-- Live event summary preview -->
+          <div id="eventSummaryPreview" class="event-summary-preview"></div>
+        </fieldset>
+
+        <!-- Mode of Participation -->
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">🌐 Mode of Participation</legend>
+          <div class="mode-cards">
+            <label class="mode-card" id="modeOnline">
+              <input type="radio" name="mode" value="Online" required>
+              <span class="mode-icon">💻</span>
+              <span class="mode-text">Online</span>
+            </label>
+            <label class="mode-card" id="modeOffline">
+              <input type="radio" name="mode" value="Offline">
+              <span class="mode-icon">🏛️</span>
+              <span class="mode-text">Offline</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Additional Details -->
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">📎 Additional Details</legend>
+
+          <div class="field-group full-width">
+            <label for="idProof" class="field-label">Upload ID Proof <span class="req">*</span> <small>(College ID / Bonafide Certificate)</small></label>
+            <input type="file" id="idProof" class="field-input file-input" accept=".pdf,.jpg,.jpeg,.png" required>
+          </div>
+
+          <div class="field-group full-width mt-16">
+            <label for="comments" class="field-label">Comments / Remarks</label>
+            <textarea id="comments" class="field-textarea" rows="3" placeholder="Any additional information..."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Declaration -->
+        <div class="declaration-box">
+          <label class="declaration-label">
+            <input type="checkbox" id="confirm" class="decl-check">
+            <span>I hereby confirm that all the above details are accurate and true. I agree to follow the event rules and regulations.</span>
+          </label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">✅ Submit Registration</button>
+          <button type="reset" class="btn btn-secondary">🔄 Reset Form</button>
+        </div>
+
+      </form>
+    </section>
+
+    <!-- ░░ PARTICIPANTS TABLE ░░ -->
+    <section class="section table-section">
+      <h2 class="section-title">
+        Registered Participants
+        <span class="count-badge">Total: <span id="participantCount">1</span></span>
+      </h2>
+      <div class="table-wrapper">
+        <table id="participantsTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>College</th>
+              <th>Dept</th>
+              <th>Year</th>
+              <th>Gender</th>
+              <th>DOB</th>
+              <th>Events</th>
+              <th>Mode</th>
+              <th>Registered At</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-email="abc@zohomail.in">
+              <td>1</td>
+              <td>ABC</td>
+              <td>abc@zohomail.in</td>
+              <td>9874563201</td>
+              <td>XYZ Arts College</td>
+              <td>BCA</td>
+              <td>2</td>
+              <td>Male</td>
+              <td>20-02-2007</td>
+              <td><span class="event-tag">Debugging</span> <span class="event-tag">Technical Quiz</span></td>
+              <td><span class="mode-badge online">Online</span></td>
+              <td>17-02-2026</td>
+              <td><button class="btn-delete" title="Remove registration">🗑 Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ SUCCESS POPUP ░░ -->
+  <div id="popup" class="popup" role="alert" aria-live="polite">
+    ✅ Registration Successful! Welcome to CODAX ZENITH 2K26.
+  </div>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <strong>CODAX ZENITH 2K26</strong>
+        <p>Dr. M. G. R. Chockalingam Arts College</p>
+        <p>Dept. of Computer Application</p>
+      </div>
+      <div class="footer-col">
+        <strong>Contact</strong>
+        <p>📧 <a href="/cdn-cgi/l/email-protection#d9bcafbcb7adaabab6bdb8a1a3bcb7b0adb1ebb2ebef99a3b6b1b6b4b8b0b5f7b0b7"><span class="__cf_email__" data-cfemail="335645565d4740505c57524b49565d5a475b0158010573495c5b5c5e525a5f1d5a5d">[email&#160;protected]</span></a></p>
+        <p>📞 +91 98765 43210</p>
